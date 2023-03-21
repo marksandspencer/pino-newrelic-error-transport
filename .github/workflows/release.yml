@@ -16,7 +16,6 @@ jobs:
         run: |
           echo "Before whoami"
           npm whoami
-          echo "After whoami"
           echo "scope=@mands" > .npmrc
           echo "@mands:registry=https://registry.npmjs.org/" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
