@@ -90,4 +90,12 @@ describe("New Relic error transport", () => {
       someKey: "some value",
     });
   });
+
+  it("buildCallback does not call noticeError if New Relic is not enabled", async () => {
+    delete process.env.NEW_RELIC_APP_NAME;
+    delete process.env.NEW_RELIC_LICENSE_KEY;
+    const { buildCallback } = await import("./index");
+    await buildCallback([{ err: { message: "Error" } }]);
+    expect(mockNoticeError).not.toHaveBeenCalled();
+  });
 });
