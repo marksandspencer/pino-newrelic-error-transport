@@ -16,5 +16,5 @@ jobs:
         run: |
           echo "scope=@mands" > .npmrc
           echo "@mands:registry=https://registry.npmjs.org/" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
           npm publish --non-interactive --access=public
