@@ -1,10 +1,14 @@
 {
   "name": "@mands/pino-newrelic-error-transport",
   "version": "0.0.4",
-  "description": "",
+  "description": "Pino New Relic transport",
   "main": "index.js",
+  "engines": {
+    "node": "16",
+    "pnpm": ">=7.27"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -14,5 +18,13 @@
     "url": "https://github.com/marksandspencer/pino-newrelic-transport"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "newrelic": "^9.13.0",
+    "pino-abstract-transport": "^1.0.0"
+  }
 }
