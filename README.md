@@ -19,5 +19,3 @@ yarn install @mands/pino-newrelic-error-transport
 ```
 
 Add `@mns/pino-newrelic-error-transport` to your code [Pino documentation](https://github.com/pinojs/pino/blob/master/docs/transports.md) for more information.
-
-test
