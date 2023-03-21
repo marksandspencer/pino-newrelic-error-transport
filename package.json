@@ -3,6 +3,10 @@
   "version": "0.0.4",
   "description": "Pino New Relic transport",
   "main": "index.js",
+  "engines": {
+    "node": "16",
+    "pnpm": ">=7.27"
+  },
   "scripts": {
     "test": "jest"
   },
