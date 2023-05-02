@@ -1,10 +1,10 @@
 {
   "name": "@mands/pino-newrelic-error-transport",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Pino New Relic transport",
   "main": "index.js",
   "engines": {
-    "node": "16",
+    "node": ">=16",
     "pnpm": ">=7.27"
   },
   "scripts": {
