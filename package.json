@@ -1,6 +1,6 @@
 {
   "name": "@mands/pino-newrelic-error-transport",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Pino New Relic transport",
   "main": "index.js",
   "engines": {
@@ -24,7 +24,7 @@
     "jest": "^29.5.0"
   },
   "dependencies": {
-    "newrelic": "^9.13.0",
+    "newrelic": "^10.2.0",
     "pino-abstract-transport": "^1.0.0"
   }
 }
